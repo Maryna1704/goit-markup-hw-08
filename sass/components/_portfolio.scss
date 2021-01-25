@@ -1,0 +1,170 @@
+.nav-link-pf {
+  font-size: 14px;
+  line-height: 1.14;
+  color: $acent-color;
+  text-decoration: none;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+}
+.nav-link-pf::after {
+  content: "";
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  position: absolute;
+  background-color: $acent-color;
+  left: 0;
+  bottom: -32px;
+}
+.filters {
+  text-decoration: none;
+  list-style: none;
+  font-family: "Roboto", sans-serif;
+}
+.filters-list {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+.picture {
+  text-decoration: none;
+  list-style: none;
+  font-family: "Roboto", sans-serif;
+}
+.picture-list {
+  flex-wrap: wrap;
+  display: flex;
+}
+.picture-card:hover {
+  display: block;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+.picture-card {
+  margin-top: 30px;
+}
+.picture-card:not(:nth-child(3n)) {
+  margin-right: 30px;
+}
+.portfolio-section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  border-top: 1px solid #ececec;
+}
+.filter-item:not(:last-child) {
+  margin-right: 8px;
+}
+
+.filter-button {
+  padding: 6px 22px;
+  border: 0px;
+  border-radius: 2px;
+  text-align: center;
+  background-color: #ececec;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  align-items: center;
+  text-decoration-color: black;
+  color: #000;
+}
+
+.filter-button:hover,
+.filter-button:focus {
+  color: #ffffff;
+  background-color: $acent-color;
+  text-decoration: none;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.picture-card-content {
+  border-top: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
+  background-color: white;
+}
+
+.picture-card-title {
+  color: $title-color;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  padding-left: 24px;
+  padding-top: 20px;
+}
+
+.picture-card-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.87;
+  padding-left: 24px;
+  padding-bottom: 20px;
+  color: #8b8686;
+}
+.overlay-img {
+  position: relative;
+  overflow: hidden;
+
+  &:hover .overlay {
+    transform: translateY(0);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(33, 150, 243, 0.9);
+  transform: translateY(100%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.overlay-text {
+  content: "";
+  position: absolute;
+  padding: 63px 24px;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.56;
+  letter-spacing: 0.03em;
+  color: $ptimary-text-color;
+  opacity: 1;
+}
+.btn {
+  width: 200px;
+  height: 26px;
+  font-weight: 500px;
+  font-size: 16px;
+  line-height: 1.25;
+  text-decoration: none;
+  color: white;
+  background-color: $acent-color;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-nav {
+  width: 200px;
+  height: 26px;
+  font-weight: 500px;
+  font-size: 16px;
+  line-height: 1.25;
+  text-decoration: none;
+  color: black;
+  background-color: white;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

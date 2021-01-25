@@ -1,0 +1,144 @@
+.site-nav .link {
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  color: $title-color;
+
+  text-decoration: none;
+}
+
+.site-nav {
+  display: flex;
+  margin-left: 94px;
+}
+
+.site-nav .item:not(:last-child) {
+  margin-right: 50px;
+}
+.nav-item {
+  margin-right: 50px;
+  display: flex;
+  position: relative;
+}
+.nav-link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  color: $title-color;
+  text-decoration: none;
+  &:hover,
+  &:focus {
+    color: $acent-color;
+    text-decoration: none;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+.nav-link-studio {
+  font-size: 14px;
+  line-height: 1.14;
+  color: $acent-color;
+  text-decoration: none;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+}
+.nav-link-studio::after {
+  content: "";
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  background: $acent-color;
+  position: absolute;
+  left: 0;
+  bottom: -32px;
+}
+.auth-nav body {
+  font-family: "Roboto", sans-serif;
+  color: $title-color;
+  text-decoration: none;
+}
+
+.auth-nav {
+  display: flex;
+  margin-left: auto;
+}
+.auth-nav a {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  color: #757575;
+  text-decoration: none;
+}
+
+.auth-nav .link {
+  color: $title-color;
+  text-decoration: none;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    color: $title-color;
+    text-decoration: none;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+.auth-nav .item + .item {
+  margin-left: 32px;
+}
+.tel {
+  display: inline-flex;
+  width: 10px;
+  height: 16px;
+  margin-right: 10px;
+  align-items: center;
+  --color5: #ffffff;
+  
+}
+
+.envelop {
+  display: inline-flex;
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+  align-items: center;
+  --color3: #757575;
+  &:hover .envelop,
+  &:focus .envelop {
+    --color3: $acent-color;
+    --color5: $acent-color;
+  }
+}
+
+.nav {
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    color: $acent-color;
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+.contacts-link {
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    color: $acent-color;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+.nav-link.current .filter-button.current {
+  text-decoration: none;
+  &:hover,
+  &:focus {
+    color: $acent-color;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
