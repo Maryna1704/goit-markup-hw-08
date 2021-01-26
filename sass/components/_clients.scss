@@ -43,24 +43,7 @@
   fill: currentColor;
 }
 
-@media screen and (max-width: 1199px) {
-  .clients-list {
-    flex-wrap: wrap;
-    margin: -15px;
-  }
-  .clients-wrapper {
-    margin: 15px;
-    &:nth-last-child(-n + 2) {
-      margin-bottom: 0;
-    }
-  }
-}
 
-@media screen and (min-width: 1200px) {
-  .clients-wrapper:not(:last-child) {
-    margin-right: 30px;
-  }
-}
 
 
 
