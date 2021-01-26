@@ -13,10 +13,26 @@
 </head>
 <body>
     <header class="page-header">
-            <div class="container header flex">
-         <nav class="container main-nav flex">    
+            <div class="container header__flex">
+            <div>
             <a href="/" class="logo-web">Web<span class="logo-studio">Studio</span></a>
+              </div>
+            
+            <button type="button" 
+                    aria-controls="menu-container" 
+                    data-menu-button>
+                  <svg 
+                  width="40" 
+                  height="40"
+                  aria-label="переключатель мобильного меню" >
+                  <use class="icon-cross" href="./img/icon-modal/symbol-defs.svg#icon-close"></use>
+                <use class="icon-menu" href="./img/icon-modal/symbol-defs.svg#icon-menu"></use>
+                  </svg>
+              </button>
+              <div class="menu-container" id="menu-container" data-menu>
 
+              </div>
+              <nav class="container main-nav flex"> 
              <ul class="site-nav list flex">
                  <li class="nav-item"> 
                      <a class="nav-link-studio" href="/index.html">Студия</a></li>
@@ -486,8 +502,11 @@
           new FormData(e.currentTarget).forEach((value, name) => console.log(`${name}: ${value}`));
           e.currentTarget.reset();
         });
-      })();
-     >
+      }
+
      </script>
+     <script src="./js/menu.js"></script>
+     
+
 </body>
 </html>
