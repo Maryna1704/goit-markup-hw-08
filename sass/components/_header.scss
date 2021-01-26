@@ -4,7 +4,9 @@ header {
   display: block;
 
   @media screen and (max-width: 767px) {
-    height: 60px;
+    header {
+      height: 60px;
+    }
   }
 }
 .container {
@@ -12,10 +14,20 @@ header {
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
-}
 
-.header-nav {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @media screen and (min-width: 480px) {
+    container {
+      width: 480px;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    container {
+      width: 768px;
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    container {
+      width: 1200px;
+    }
+  }
 }

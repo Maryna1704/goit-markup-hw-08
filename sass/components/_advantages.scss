@@ -1,9 +1,12 @@
 .advantages {
   padding-top: 94px;
   padding-bottom: 94px;
+
   @media screen and (min-width: 480px) {
-    padding-top: 60px;
-    padding-bottom: 60px;
+    advantages {
+      padding-top: 60px;
+      padding-bottom: 60px;
+    }
   }
 }
 .advantages-list {
